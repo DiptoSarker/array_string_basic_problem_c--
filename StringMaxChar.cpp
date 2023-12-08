@@ -4,24 +4,25 @@ using namespace std;
 int main(){
     string s="bbbbbssjnkmcnxhcjksl";
     int n=s.length();
-    int freq[26];
-    for(int i=0; i<26; i++){
+   int freq[26];
+    for(int i=0;i<26;i++){
         freq[i]=0;
     }
 
-    for(int i=0; i<n; i++){
+    for(int i=0;i<n;i++){
         freq[s[i]-'a']++;
     }
 
-    int maxf=0;
-    string ans="";
-
-    for(int i=0; i<26;i++){
-        if(freq[i]>maxf){
-            maxf=freq[i];
-            ans='a'+i;
+    int maxi=0;
+    for(int i=0; i<26; i++){
+       maxi=max(maxi, freq[i]);
+    }
+    string ch="";
+    for(int i=0;i<26;i++){
+        if(freq[i]==maxi){
+           ch='a'+i;
         }
     }
 
-    cout<<ans<<"  "<<maxf;
+    cout<<maxi<<' '<<ch<<"      ";
 }

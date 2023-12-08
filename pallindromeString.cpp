@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    string s = "diptootpidd";
+    string s = "diptootpid";
     int n=s.length();
     int count = 0;
     for(int i=0;i<n/2;i++){

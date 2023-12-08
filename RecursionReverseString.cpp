@@ -6,9 +6,8 @@ void reverse(string s){
     if(s.length()==0){
         return;
     }
-
-    string rest=s.substr(1);
-    reverse(rest);
+    string sop= s.substr(1);
+    reverse(sop);
     cout<<s[0];
 }
 
