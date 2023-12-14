@@ -1,0 +1,10 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/lzbd/Documents/Desktop/C++/output/DpMaxSubArraySum'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D6C, symSize: 0x15C }
+  - { offsetInCU: 0xB0C, offset: 0xB0C, size: 0x8, addend: 0x0, symName: __ZNSt3__13maxB7v160006IiEERKT_S3_S3_, symObjAddr: 0x15C, symBinAddr: 0x100003EC8, symSize: 0x2C }
+  - { offsetInCU: 0xB4F, offset: 0xB4F, size: 0x8, addend: 0x0, symName: __ZNSt3__13maxB7v160006IiNS_6__lessIiiEEEERKT_S5_S5_T0_, symObjAddr: 0x188, symBinAddr: 0x100003EF4, symSize: 0x54 }
+  - { offsetInCU: 0x2D3E, offset: 0x2D3E, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D6C, symSize: 0x15C }
+  - { offsetInCU: 0x2DCD, offset: 0x2DCD, size: 0x8, addend: 0x0, symName: __ZNKSt3__16__lessIiiEclB7v160006ERKiS3_, symObjAddr: 0x1DC, symBinAddr: 0x100003F48, symSize: 0x34 }
+...

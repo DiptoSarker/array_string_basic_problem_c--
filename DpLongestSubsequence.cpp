@@ -2,8 +2,12 @@
 using namespace std;
 
 int main(){
-    string s1="abcde";
-    string s2="ace";
+    string s1="bbbab";
+    // string s2=s1;
+    // reverse(s1.begin(),s1.end())
+   
+
+   string s2="aceb";
 
     int n1=s1.length();
     int n2=s2.length();
@@ -23,7 +27,7 @@ int main(){
 
     for(int i=1;i<n1+1; i++){
         for(int j=1;j<n2+1; j++){
-            if(s1[i]==s2[j]){
+            if(s1[i-1]==s2[j-1]){
                 dp[i][j]=dp[i-1][j-1]+1;
             }
 
