@@ -25,7 +25,7 @@ int main(){
         }
 
     int numsF[n-1];
-    int numsL[n-1];
+    int numsL[n- 1];
 
     for (int i=0;i<n-1;i++){
         numsF[i]=nums[i+1];

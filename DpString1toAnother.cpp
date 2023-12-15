@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 int main(){
-    string s1="abbc";
-    string s2="acd";
+    string s1="horse";
+    string s2="ros";
     int n1=s1.length();
     int n2=s2.length();
     int dp[n1+1][n2+1];
