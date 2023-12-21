@@ -20,7 +20,7 @@ int finderr(string arr[], int n){
 
 
 int main(){
-    string arr[] = {"dipto","dipali","dipika"};
+    string arr[] = { "dipto","dipali","dipika"};
     int n = sizeof(arr)/sizeof(arr[0]);
     int res = finderr(arr,n); 
     cout<<res;

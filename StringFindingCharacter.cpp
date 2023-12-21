@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-    string words[] = {"leet","code"};
+    string words[] = {"leet","cod"};
     char ch = 'e';
     int n = sizeof(words)/sizeof(words[0]);
 

@@ -1,23 +1,26 @@
-#include <iostream>
-#include <vector>
-#include <cmath>
+#include<iostream>
+#include<set>
+using namespace std;
 
-int main() {
-    int N;
-    std::cin >> N;
+int main(){
+    string s="ppcckccawab";
+    int n=s.length();
+    
+    set<int> st;
+    int start=0;
+    int end=0;
+    int count=0;
 
-    std::vector<int> h(N);
-    for (int i = 0; i < N; ++i) {
-        std::cin >> h[i];
+    while(end<n){
+       if(st.find(s[end])==st.end()){
+         st.insert(s[end]);
+         count=max(count, end-start+1);
+         end++;
+       }
+       else{
+        st.erase(s[start]);
+        start++;
+       }
     }
-
-    std::vector<int> dp(N, 0);
-
-    for (int i = 1; i < N; ++i) {
-        dp[i] = std::min(dp[i - 1] + std::abs(h[i] - h[i - 1]), (i > 1 ? dp[i - 2] + std::abs(h[i] - h[i - 2]) : INT_MAX));
-    }
-
-    std::cout << dp[N - 1] << std::endl;
-
-    return 0;
+    cout<<count;
 }

@@ -2,10 +2,8 @@
 #include<string>
 using namespace std;
 
-
-
 int main(){
-    string s = "pritom sarker Dipto";
+    string s = "Pritom Sarker Dipto";
     string ans="";
     int len = s.length();
     int r=0;
@@ -17,9 +15,7 @@ int main(){
           ans.append(s.substr(i+1,r));
           ans.append(" ");
         }
-       
     }
-     ans.append(s.substr(0,len+1));
-    
+    ans.append(s.substr(0,len+1));
     cout<<ans;
 }

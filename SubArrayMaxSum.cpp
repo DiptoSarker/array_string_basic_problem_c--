@@ -16,7 +16,7 @@ int main(){
         }
     }
 
-    cout<<maxi<<endl;
+    cout<<maxi <<endl;
 
 }
 

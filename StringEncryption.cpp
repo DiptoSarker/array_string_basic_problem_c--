@@ -32,7 +32,6 @@ string res(string s, int n){
         i++;
       }
       i--;
-      
       hax=hexa(count);
       ans+=ch;
       ans+=hax;
